@@ -6,12 +6,3 @@ export const setTitle = (data) => {
     data: data,
   };
 };
-
-export const showProgressBar = (data) => {
-  return (dispatch) => {
-    dispatch({
-      type: actionTypes.SHOW_PROGRESSBAR,
-      data,
-    });
-  };
-};

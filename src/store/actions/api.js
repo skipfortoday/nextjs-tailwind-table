@@ -1,7 +1,7 @@
 import http from "../../services/NetworkService";
 
-export const getPayMethod = (params) => {
-  return http.get("/paymethod", {
+export const getUsers = (params) => {
+  return http.get("api/", {
     params: params,
   });
 };
