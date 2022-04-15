@@ -1,0 +1,2 @@
+export const LOCAL_USER_KEY = "LOCAL_USER_KEY";
+export const LOCAL_OUTLET_KEY = "LOCAL_OUTLET_KEY";
