@@ -71,6 +71,7 @@ const TableUsers = ({ setTableQuery, tableQuery }) => {
         </button>
         {pages.map((page, index) => (
           <button
+            key={index}
             className={`btn btn-sm ${page == tableQuery.page && "btn-active"} `}
             onClick={() => setTableQuery({ ...tableQuery, page: page })}
           >
