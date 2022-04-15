@@ -1,6 +1,7 @@
 ## Next.JS Tailwind & Table with Random User API
 
 Check on [Demo](https://nextjs-tailwind-table.vercel.app) .
+![Animation](https://user-images.githubusercontent.com/43211197/163572972-3155d923-c171-4329-8565-2ae0836a52e5.gif)
 
 Feature :
 
