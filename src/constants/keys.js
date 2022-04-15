@@ -36,7 +36,7 @@ export const initState = {
   pageSize: 3,
   results: 10,
   inc: "gender,name,username,email,registered,login",
-  seed: "rizqiramadhani",
+  //seed: "rizqiramadhani", remove seed to give interaction & indicator short table
   sort: null,
   keyword: null,
   gender: null,
