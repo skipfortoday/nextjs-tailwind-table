@@ -37,10 +37,7 @@ export const initState = {
   results: 10,
   inc: "gender,name,username,email,registered,login",
   seed: "rizqiramadhani",
-  sort: {
-    sortBy: null,
-    sortOrder: null,
-  },
+  sort: null,
   keyword: null,
   gender: null,
 };
