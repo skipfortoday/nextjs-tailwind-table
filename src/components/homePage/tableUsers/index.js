@@ -18,6 +18,7 @@ const TableUsers = ({ setTableQuery, tableQuery }) => {
                   <th key={index}>
                     <span
                       className="flex gap-2 cursor-pointer"
+                      data-cy={item.name}
                       onClick={() => {
                         setTableQuery({
                           ...tableQuery,
@@ -60,6 +61,7 @@ const TableUsers = ({ setTableQuery, tableQuery }) => {
       <div className="btn-group my-2 justify-center ">
         <button
           className="btn btn-sm"
+          data-cy="prev"
           onClick={() => {
             if (tableQuery.page > 1) {
               setTableQuery({ ...tableQuery, page: tableQuery.page - 1 });
@@ -80,6 +82,7 @@ const TableUsers = ({ setTableQuery, tableQuery }) => {
         ))}
         <button
           className="btn btn-sm"
+          data-cy="next"
           disabled={tableQuery.page >= pages.length ? true : false}
           onClick={() => {
             if (tableQuery.page != pages.length) {

@@ -47,6 +47,7 @@ const SearchFilter = ({ setTableQuery, tableQuery }) => {
           className="input input-bordered  input-sm w-full max-w-xs"
           value={querySearch ? querySearch : ""}
           onChange={(e) => setQuerySearch(e.target.value)}
+          data-cy="search"
         />
       </div>
       <div className="form-control w-full max-w-xs">
@@ -59,11 +60,12 @@ const SearchFilter = ({ setTableQuery, tableQuery }) => {
             handleFilter(e.target.value);
           }}
           value={gender}
+          data-cy="filter"
         >
           <option value={false}>All</option>
           {genderOptions?.map((item, index) => {
             return (
-              <option key={index} value={item.value}>
+              <option key={index} value={item.value} data-cy={item.value}>
                 {item.label}
               </option>
             );
@@ -73,6 +75,7 @@ const SearchFilter = ({ setTableQuery, tableQuery }) => {
       <button
         className="btn align-bottom h-full btn-sm mt-9"
         onClick={() => handleFilter()}
+        data-cy="reset"
       >
         Reset
       </button>
